@@ -16,40 +16,41 @@ describe('sum', () => {
     expect(actual).toBe(expected);
   });
 
-  test.skip('can add two large positive numbers', () => { 
-    
+  test('can add two large positive numbers', () => { 
+    expect (sum(156, 241)).toBe(397);
   });
 
-  test.skip('can add two negative numbers', () => {
-    
+  test('can add two negative numbers', () => {
+    expect (sum(-11,-9)).toBe(-20);
   });
 
-  test.skip('can add zero', () => {
-    
+  test('can add zero', () => {
+    expect (sum(5,0)).toBe(5);
+
   });
 
-});
+// });
 
-describe('subtract', () => {
+// describe('subtract', () => {
 
-});
+// });
 
-describe('multiply', () => {
+// describe('multiply', () => {
 
-});
+// });
 
-describe('divide', () => {
+// describe('divide', () => {
 
-});
+// });
 
-describe('modulus', () => {
+// describe('modulus', () => {
 
-});
+// });
 
-describe('even', () => {
+// describe('even', () => {
 
-});
+// });
 
-describe('odd', () => {
+// describe('odd', () => {
 
 });
