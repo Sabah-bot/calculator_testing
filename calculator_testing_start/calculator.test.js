@@ -98,23 +98,47 @@ describe('modulus', () => {
     expect(modulus(11,2)).toBe(1);
   })
 
-  test.skip('can divide two small negative numbers', () => {
-    expect(divide(-20, -10)).toBe(2);
+  test('can modulus two small negative numbers', () => {
+    expect(modulus(-33, -10)).toBe(-3);
   })
 
-  test.skip('can divide two large positive numbers', () => {
-    expect(divide(250, 50)).toBe(5);
+  test('can modulus two large positive numbers', () => {
+    expect(modulus(1000, 30)).toBe(10);
   })
 
-  test.skip('can divide one positive and one negative', () => {
-    expect(divide(-45, 9)).toBe(-5);
+  test('can modulus one positive and one negative', () => {
+    expect(modulus(-47, 9)).toBe(-2);
   })
 
 });
 
-// describe('even', () => {
+describe('even', () => {
 
-// });
+  test('a is an even integer', () => {
+    const expected = 4;
+    const actual = even(4,3);
+    expect(actual).toBe(expected);
+  })
+
+  test('b is an even integer', () => {
+    const expected = 2;
+    const actual = even(1,2);
+    expect(actual).toBe(expected);
+  })
+
+  test('neither a or b is an even integer', () => {
+    const expected = "There are no even numbers!";
+    const actual = even(11,17);
+    expect(actual).toBe(expected);
+  })
+
+  test('a and be are both even integers', () => {
+    const expected = (32 && 56);
+    const actual = even(32,56);
+    expect(actual).toBe(expected);
+  })
+
+});
 
 // describe('odd', () => {
 
