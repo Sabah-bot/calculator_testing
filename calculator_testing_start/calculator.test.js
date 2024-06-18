@@ -29,11 +29,27 @@ describe('sum', () => {
 
   });
 
-// });
+});
 
-// describe('subtract', () => {
+describe('subtract', () => {
 
-// });
+  test('can subtract two small positive numbers', () => {
+
+  })
+
+  test('can subtract two small positive numbers', () => {
+    
+  })
+
+  test('can subtract two small positive numbers', () => {
+    
+  })
+
+  test('can subtract two small positive numbers', () => {
+    
+  })
+
+});
 
 // describe('multiply', () => {
 
@@ -53,4 +69,4 @@ describe('sum', () => {
 
 // describe('odd', () => {
 
-});
+// });
