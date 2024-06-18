@@ -92,9 +92,25 @@ describe('divide', () => {
 
 });
 
-// describe('modulus', () => {
+describe('modulus', () => {
 
-// });
+  test('can modulus two small positive numbers',() => {
+    expect(modulus(11,2)).toBe(1);
+  })
+
+  test.skip('can divide two small negative numbers', () => {
+    expect(divide(-20, -10)).toBe(2);
+  })
+
+  test.skip('can divide two large positive numbers', () => {
+    expect(divide(250, 50)).toBe(5);
+  })
+
+  test.skip('can divide one positive and one negative', () => {
+    expect(divide(-45, 9)).toBe(-5);
+  })
+
+});
 
 // describe('even', () => {
 
