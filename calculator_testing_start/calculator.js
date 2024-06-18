@@ -6,9 +6,13 @@ const subtract = function(num1, num2){
     return num2 - num1;
 };
 
-const multiply = null;
+const multiply = function(num1, num2){
+    return num1 * num2;
+};
 
-const divide = null;
+const divide = function(num1,num2){
+    return num1 / num2;
+};
 
 const modulus = null;
 

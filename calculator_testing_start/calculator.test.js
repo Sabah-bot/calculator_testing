@@ -51,13 +51,46 @@ describe('subtract', () => {
 
 });
 
-// describe('multiply', () => {
+describe('multiply', () => {
 
-// });
+  test('can mulitply two small positive numbers',() => {
+    expect(multiply(2,2)).toBe(4);
+  })
 
-// describe('divide', () => {
+  test('can mulitply two small negative numbers', () => {
+    expect(multiply(-2, -2)).toBe(4);
+  })
 
-// });
+  test('can mulitply two large positive numbers', () => {
+    expect(multiply(100, 33)).toBe(3300);
+  })
+
+  test('can mulitply one positive and one negative', () => {
+    expect(multiply(-5, 9)).toBe(-45);
+  })
+
+});
+
+describe('divide', () => {
+
+  test('can divide two small positive numbers',() => {
+    expect(divide(6,2)).toBe(3);
+  })
+
+  test('can divide two small negative numbers', () => {
+    expect(divide(-20, -10)).toBe(2);
+  })
+
+  test('can divide two large positive numbers', () => {
+    expect(divide(250, 50)).toBe(5);
+  })
+
+  test('can divide one positive and one negative', () => {
+    expect(divide(-45, 9)).toBe(-5);
+  })
+
+
+});
 
 // describe('modulus', () => {
 
