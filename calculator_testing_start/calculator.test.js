@@ -34,19 +34,19 @@ describe('sum', () => {
 describe('subtract', () => {
 
   test('can subtract two small positive numbers', () => {
-
+    expect(subtract(3, 7)).toBe(4);
   })
 
-  test('can subtract two small positive numbers', () => {
-    
+  test('can subtract two small negative numbers', () => {
+    expect(subtract(-1, -3)).toBe(-2);
   })
 
-  test('can subtract two small positive numbers', () => {
-    
+  test('can subtract two large positive numbers', () => {
+    expect(subtract(300, 430)).toBe(130);
   })
 
-  test('can subtract two small positive numbers', () => {
-    
+  test('can subtract one positive and one negative', () => {
+    expect(subtract(-5, 9)).toBe(14);
   })
 
 });
