@@ -128,6 +128,19 @@ describe('even', () => {
 
 });
 
-// describe('odd', () => {
+describe('odd', () => {
 
-// });
+  test('number is an odd integer', () => {
+    const expected = true;
+    const actual = odd(3);
+    expect(actual).toBe(expected);
+  })
+
+  test('number is an odd integer', () => {
+    const expected = false;
+    const actual = odd(80);
+    expect(actual).toBe(expected);
+  })
+
+
+});
