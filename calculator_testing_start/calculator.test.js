@@ -114,27 +114,15 @@ describe('modulus', () => {
 
 describe('even', () => {
 
-  test('a is an even integer', () => {
-    const expected = 4;
-    const actual = even(4,3);
+  test('number is an even integer', () => {
+    const expected = true;
+    const actual = even(4);
     expect(actual).toBe(expected);
   })
 
-  test('b is an even integer', () => {
-    const expected = 2;
-    const actual = even(1,2);
-    expect(actual).toBe(expected);
-  })
-
-  test('neither a or b is an even integer', () => {
-    const expected = "There are no even numbers!";
-    const actual = even(11,17);
-    expect(actual).toBe(expected);
-  })
-
-  test('a and be are both even integers', () => {
-    const expected = (32 && 56);
-    const actual = even(32,56);
+  test('number is an odd integer', () => {
+    const expected = false;
+    const actual = even(71);
     expect(actual).toBe(expected);
   })
 
